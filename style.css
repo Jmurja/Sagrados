@@ -6,7 +6,7 @@
 
 body{
     width: 100vw;
-    height: 100vh;
+    height: 500vh;
     font-family: "Cutive Mono", monospace;
     font-weight: 400;
     font-style: normal;
@@ -26,6 +26,11 @@ header{
     align-items: center;
 }
 
+header.rolagem{
+    background-color: #fff;
+    padding: 20px 4%;;
+}
+
 .flex{
     display: flex;
     font-size: 20pt;
@@ -38,6 +43,8 @@ a{
     color: white;
 }
 
+
+
 .banner{
     background-color: black;
     width: 100vw;
@@ -45,6 +52,7 @@ a{
     display: flex;
     align-items: center;
     justify-content:center;
+    transition: opacity 0.5s, visibility 0.5s ease-in-out;
 }
 
 .text-banner{
@@ -52,4 +60,9 @@ a{
     width: 90vw;
     height: 40vh;
     font-size: 15pt;
+}
+
+.hidden{
+  opacity: 0;
+  visibility: hidden;
 }
