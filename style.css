@@ -20,16 +20,22 @@ html{
 header{
     width: 100vw;
     height:80px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
 }
 
 header.rolagem{
     background-color: #fff;
     padding: 20px 4%;;
 }
+
+.header-black {
+    background-color: black;
+  }
+  
 
 .flex{
     display: flex;
@@ -46,13 +52,16 @@ a{
 
 
 .banner{
-    background-color: black;
+    background-image: url('assets/instalacao.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100vw;
     height: 800px;
     display: flex;
     align-items: center;
     justify-content:center;
-    transition: opacity 0.5s, visibility 0.5s ease-in-out;
+    transition: opacity 1.0s, visibility 0.5s ease-in-out;
 }
 
 .text-banner{
@@ -60,6 +69,10 @@ a{
     width: 90vw;
     height: 40vh;
     font-size: 15pt;
+}
+
+.text-banner h2{
+    color: rgb(38, 138, 31);
 }
 
 .hidden{

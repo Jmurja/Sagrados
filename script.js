@@ -1,14 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
     var banner = document.querySelector('.banner');
+    var bannerOriginalOffsetTop = banner.offsetTop;
+    var bannerHeight = banner.offsetHeight; 
   
     function handleScroll() {
-      var bannerRect = banner.getBoundingClientRect();
-      var bannerMidPoint = window.scrollY + bannerRect.top + (bannerRect.height / 4);
-  
-      if (window.scrollY > bannerMidPoint) {
+      var scrollY = window.pageYOffset || document.documentElement.scrollTop;
+        var bannerDisappearPoint = bannerOriginalOffsetTop + (bannerHeight / 3);
+      if (scrollY > bannerDisappearPoint) {
         banner.classList.add('hidden');
       } else {
-        // Se a rolagem for menor que a metade da altura da banner, mostra a banner
         banner.classList.remove('hidden');
       }
     }
