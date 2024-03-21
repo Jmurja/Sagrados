@@ -1,72 +1,55 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body{
     width: 100vw;
     height: 100vh;
+    font-family: "Cutive Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
 }
 
-a{    
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100vw;
+    height:80px;
+    background-color: black;
     display: flex;
-    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex{
+    display: flex;
+    font-size: 20pt;
+    gap: 25px;
+}
+
+a{
     text-decoration: none;
     list-style: none;
-    font-style: none;
-    font-size: 20pt;
+    color: white;
 }
 
-ul{
-    display: flex;
-    background-color: rgb(54, 54, 54);
+.banner{
+    background-color: black;
     width: 100vw;
-    height: 125px;
-    gap: 20px;
-    align-items: center;
-}
-
-li{
-    margin: 0px 0px 0px 20px;
-}
-
-.container-home{
-    display: flex;
-    width: 100vw;
-    height: 100dvh;
-    align-items: center;
-    justify-content: center;
-}
-
-.left{
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    width: 50vw;
-}
-
-.right{
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    width: 50vw;
-}
-
-.container-home img{
-    width: 1000px;
-    height: 1000px;
-}
-
-.slider{
-    width: 100vw;
-    height: 100vh;
+    height: 800px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:center;
 }
 
-.slider img{
-    width: 80vw;
-    height: 1200px;
+.text-banner{
+    color: white;
+    width: 90vw;
+    height: 40vh;
+    font-size: 15pt;
 }
