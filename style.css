@@ -127,8 +127,6 @@ header.rolagem{
     height: 80%;
 }
 
-
-
 .sobre-right{
     display: flex;
     align-items: center;
@@ -174,4 +172,96 @@ header.rolagem{
 
 .projetos-right p{
     width: 60%;
+}
+
+@media only screen and (max-width: 1650px) {    .container-gestoes{
+        gap: 30px;
+        display: grid;
+        grid-template-columns: 400px 400px 400px;
+        transition: transform .5s ease;
+    }
+    
+    .container-gestoes img{
+        width: 350px;
+        border-radius: 10px;
+        -webkit-transition: -webkit-transform .5s ease;
+        transition: transform .5s ease;
+    }
+
+    .sobre-left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50vw;
+    }
+    
+    .card-sobre{
+        margin: 5%;
+        background-color: rgb(36, 36, 36);
+        font-size: 22pt;
+        height: 50%;
+    }
+    
+    .sobre-right img{
+        width: 670px;
+        height: 670px;
+        border-radius: 10px;
+    }
+    
+}
+
+
+@media only screen and (max-width: 1350px) { 
+.container-gestoes{
+    gap: 50px;
+    grid-template-columns: 400px 400px;
+}
+
+.container-gestoes img{
+    width: 400px;
+    border-radius: 10px;
+}
+
+.card-sobre{
+    font-size: 20pt;
+}
+
+.sobre-right img{
+    width: 570px;
+    height: 570px;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 1150px) { 
+    .container-gestoes{
+        gap: 50px;
+        grid-template-columns: 170px 170px 170px;
+    }
+    
+    .container-gestoes img{
+        width: 200px;
+        border-radius: 10px;
+    }
+    
+    .container-sobre{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-sobre img{
+        margin: -220px 0px 0px 0px;
+    }
+
+    .card-sobre{
+        margin: 0;
+        font-size: 20pt;
+        padding: 20px 20px 630px 20px;
+    }
+    
+    .sobre-right img{
+        width: 570px;
+        height: 570px;
+        border-radius: 10px;
+    }
 }
