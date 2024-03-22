@@ -86,11 +86,19 @@ a{
     align-items: center;
     width: 100vw;
     height: 100vh;
+    transition: transform .5s ease;
 }
 
 .container-gestoes img{
     width: 500px;
     border-radius: 10px;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+}
+
+.container-gestoes img:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .container-sobre{
