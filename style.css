@@ -90,5 +90,37 @@ a{
 
 .container-gestoes img{
     width: 500px;
+    border-radius: 10px;
 }
 
+.container-sobre{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.sobre-left{
+    align-items: center;
+    justify-content: center;
+    width: 45vw;
+}
+
+.card-sobre{
+    margin: 5%;
+    background-color: rgb(36, 36, 36);
+    font-size: 20pt;
+    color: white;
+    padding: 55px;
+    border-radius: 10px;
+}
+
+.card-sobre h1{
+    margin: 5%;
+}
+
+
+.sobre-right{
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+}
