@@ -33,7 +33,7 @@ header.rolagem{
 }
 
 .header-black {
-    background-color: black;
+    background-color: rgb(29, 29, 29);
   }
   
 
@@ -79,3 +79,16 @@ a{
   opacity: 0;
   visibility: hidden;
 }
+
+.container-gestoes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container-gestoes img{
+    width: 500px;
+}
+
