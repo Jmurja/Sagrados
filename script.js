@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var banner = document.querySelector('.banner');
-    var header = document.querySelector('header'); 
-    var bannerOriginalOffsetTop = banner.offsetTop; 
-    var bannerHeight = banner.offsetHeight;
+    let banner = document.querySelector('.banner');
+    let header = document.querySelector('header'); 
+    let bannerOriginalOffsetTop = banner.offsetTop; 
+    let bannerHeight = banner.offsetHeight;
   
     function handleScroll() {
-      var scrollY = window.pageYOffset || document.documentElement.scrollTop;
-      var bannerDisappearPoint = bannerOriginalOffsetTop + (bannerHeight / 2);
+      let scrollY = window.pageYOffset || document.documentElement.scrollTop;
+      let bannerDisappearPoint = bannerOriginalOffsetTop + (bannerHeight / 2);
   
 
       if (scrollY > bannerDisappearPoint) {

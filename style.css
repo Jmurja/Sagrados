@@ -100,9 +100,10 @@ a{
 }
 
 .sobre-left{
+    display: flex;
     align-items: center;
     justify-content: center;
-    width: 45vw;
+    width: 50vw;
 }
 
 .card-sobre{
@@ -112,6 +113,7 @@ a{
     color: white;
     padding: 55px;
     border-radius: 10px;
+    height: 80%;
 }
 
 .card-sobre h1{
@@ -120,7 +122,14 @@ a{
 
 
 .sobre-right{
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 50vw;
+}
+
+.sobre-right img{
+    width: 770px;
+    height: 770px;
+    border-radius: 10px;
 }
