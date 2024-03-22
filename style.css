@@ -27,6 +27,12 @@ header{
     position: fixed;
 }
 
+a{
+    text-decoration: none;
+    list-style: none;
+    color: rgba(255, 255, 255, 0.742);
+}
+
 header.rolagem{
     background-color: #ffffff;
     padding: 20px 4%;;
@@ -36,20 +42,11 @@ header.rolagem{
     background-color: rgb(29, 29, 29);
   }
   
-
 .flex{
     display: flex;
     font-size: 20pt;
     gap: 25px;
 }
-
-a{
-    text-decoration: none;
-    list-style: none;
-    color: rgba(255, 255, 255, 0.742);
-}
-
-
 
 .banner{
     background-image: url('assets/instalacao.png');
@@ -140,4 +137,36 @@ a{
     width: 770px;
     height: 770px;
     border-radius: 10px;
+}
+
+.container-projetos{
+    display: flex;
+    font-size: 16pt;
+}
+
+.projetos-left{
+    display: flex;
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.projetos-left img{
+    width: 300px;
+    height: 300px;
+}
+
+.projetos-right{
+    display: flex;
+    width: 50vw;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.projetos-right p{
+    width: 60%;
 }
